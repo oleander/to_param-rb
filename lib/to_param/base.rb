@@ -1,6 +1,17 @@
 module ToParam
   module Base
     extend ActiveSupport::Concern
+    #
+    # A one-liner solution for ActiveRecord::Base#to_param
+    #
+    # @args 
+    #   String A non empty format string 
+    #   Symbol An existing attribute name
+    # @example
+    #   to_param :name
+    #   to_param ":id-:awesome-name"
+    #   to_param "static"
+    #
     def to_param(args)
         case args
         when String
