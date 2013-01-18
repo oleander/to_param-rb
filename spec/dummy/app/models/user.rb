@@ -27,3 +27,9 @@ class User5 < ActiveRecord::Base
   attr_accessible :age, :is_fast, :name
   to_param ":id-:invalid"
 end
+
+class User6 < ActiveRecord::Base
+  self.table_name = "users"
+  attr_accessible :age, :is_fast, :name
+  to_param ":id-:is_fast"
+end

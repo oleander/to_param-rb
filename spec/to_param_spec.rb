@@ -7,6 +7,10 @@ describe ToParam do
     it "handles static patterns" do
       User2.create(name: "Pelle").to_param.should eq("static")
     end
+
+    it "should handle a boolean " do
+      User6.create(is_fast: true).to_param.should match(/^\d+-true$/)
+    end
   end
 
   describe Symbol do
