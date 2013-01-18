@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.email       = ["linus@oleander.nu "]
   s.homepage    = "http://github.com/oleander/to_param-rb"
   s.summary     = "A one-liner solution for ActiveRecord::Base#to_param"
-  s.description = s.summary
+  s.description = "A one-liner solution for ActiveRecord::Base#to_param"
 
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.md"]
 
